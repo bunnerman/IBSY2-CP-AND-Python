@@ -1,5 +1,5 @@
 #-------- EXPERIMENT SEPARATOR I --------#
-#---- PROGRmat SEPARATOR ----#
+#---- PROGRAM SEPARATOR ----#
 X = 10
 Y = 20
 print("X + Y =", X + Y)
