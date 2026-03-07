@@ -25,25 +25,21 @@ int main()
 			hashTable.push_back(vec[i]);
 		else
 		{
-			int h = vec[i] % 5;
-
-			if (hashTable[h] == -1)
-				hashTable[h] = vec[i];
-			else
+			for (int j = 0; j < 5; j++)
 			{
-				while (h < 5 && hashTable[h] != -1)
-					h++;
-				if (h >= 5)
+				hashFull = true; // asssume its full
+				int h = (vec[i] + j) % 5;
+				if (hashTable[h] == -1)
 				{
-					hashTable.push_back(vec[i]);
-					hashFull = true;
-					continue;
+					hashTable[h] = vec[i];
+					hashFull = false;
+					break;
 				}
-				hashTable[h] = vec[i];
 			}
+			if (hashFull)
+				hashTable.push_back(vec[i]);
 		}
 	}
-
 	for (int i = 0; i < hashTable.size(); i++)
 	{
 		cout << i << ": ";
