@@ -8,17 +8,12 @@ int main()
 	cout << "Enter number of elements: ";
 	cin >> n;
 	cout << "Enter " << n << " elements: ";
-	vector <int> vec;
+	vector <int> vec(n);
 	for (int i = 0; i < n; i++)
-	{
-		int t;
-		cin >> t;
-		vec.push_back(t);
-	}
+		cin >> vec[i];
 
 	// Used Hash Function: H(x) = x % 5
-	vector <vector <int>> hashTable;
-	hashTable.resize(5);
+	vector <vector <int>> hashTable(5);
 	for (int i = 0; i < n; i++)
 	{
 		int h = vec[i] % 5;
@@ -28,8 +23,8 @@ int main()
 	for (int i = 0; i < 5; i++)
 	{
 		cout << i << ": ";
-		for (int j = 0; j < hashTable[i].size(); j++)
-			cout << hashTable[i][j] << " ";
+		for (int element : hashTable[i])
+			cout << element << " ";
 		cout << "\n";
 	}
 
