@@ -13,7 +13,9 @@ int main()
     for (int i = 0; i < n; i++)
         cin >> vec[i];
 
-    int size = 5; // H(x) = x % size, better for demonstrating Linear Probing
+    int size;
+	cout << "Enter size of hash table (H(x) = x \% size): ";
+	cin >> size;
     vector<int> hashTable(size, -1);
 
     for (int i = 0; i < n; i++)
