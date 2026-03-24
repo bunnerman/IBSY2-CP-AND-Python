@@ -24,7 +24,7 @@ int main()
 	int key; 
 	cin >> key; 
 	
-	int result = recBinarySerach(ary, 0, n - 1, key); 
+	int result = recBinarySearch(ary, 0, n - 1, key); 
 	if (result == -1) 
 		cout << "Not Present"; 
 	else 
