@@ -7,9 +7,9 @@ int recBinarySearch(int* ary, int low, int high, int key)
 		return -1; 
 	int mid = (high + low) / 2; 
 	if (ary[mid] > key) 
-		return recBin(ary, low, mid - 1, key); 
+		return recBinarySearch(ary, low, mid - 1, key); 
 	else if (ary[mid] < key) 
-		return recBin(ary, mid + 1, high, key); 
+		return recBinarySearch(ary, mid + 1, high, key); 
 	else 
 		return mid; 
 } 
