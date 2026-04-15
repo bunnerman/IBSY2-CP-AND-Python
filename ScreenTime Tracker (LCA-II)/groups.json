@@ -1,0 +1,7 @@
+{
+    "Browser": ["zen.exe"],
+    "Programming/Dev": ["Code.exe", "windowsterminal.exe"],
+	"Productivity": ["obsidian.exe", "blender.exe", "excel.exe", "powerpnt.exe", "winword.exe", "everything.exe"],
+    "Chatting": ["discord.exe", "whatsapp.exe"],
+	"Gaming": ["steamwebhelper.exe", "javaw.exe", "cs2.exe", "ace7Game.exe", "ravenfield.exe", "roblox.exe", "valorant.exe", "civilizationvi.exe", "ghostrunner.exe", "ghostrunner2.exe"]
+}
