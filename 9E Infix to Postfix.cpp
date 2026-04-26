@@ -29,9 +29,18 @@ string infixToPostfix(string str)
         }
         else
         {
-            while (!stk.empty() &&
-                  ((ch == '+' || ch == '-') && (stk.top() == '+' || stk.top() == '-' || stk.top() == '*' || stk.top() == '/')) ||
-                  ((ch == '*' || ch == '/') && (stk.top() == '*' || stk.top() == '/')))
+            while 
+			(
+				!stk.empty() && 
+				(
+					(ch == '+' || ch == '-') && 
+					(stk.top() == '+' || stk.top() == '-' || stk.top() == '*' || stk.top() == '/')
+				) || 
+				(
+					(ch == '*' || ch == '/') && 
+					(stk.top() == '*' || stk.top() == '/')
+				)
+			)
             {
                 out += stk.top();
                 stk.pop();
