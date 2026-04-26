@@ -25,12 +25,12 @@ class stk
 			return;
 		}
 		top--;
-		cout << "Popped\n";
+		cout << "Popped " << ary[top] << "\n";
 	}
 	void display()
 	{
-		for (int &i : ary)
-			cout << i << " ";
+		for (int i = 0; i < top; i++)
+			cout << ary[i] << " ";
 		cout << "\n";
 	}
 };
